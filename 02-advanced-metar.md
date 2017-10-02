@@ -57,4 +57,4 @@ response_body = url.read()
 [NOAA]: http://www.noaa.gov/
 [requests]: http://docs.python-requests.org/en/master/
 [ElementTree]: https://docs.python.org/3.5/library/xml.etree.elementtree.html
-[urllib.requst]: https://docs.python.org/3.5/library/urllib.request.html#module-urllib.request
+[urllib.request]: https://docs.python.org/3.5/library/urllib.request.html#module-urllib.request
