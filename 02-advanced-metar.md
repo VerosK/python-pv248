@@ -6,7 +6,7 @@ Python je vhodný nástroj pro práci s cizími službami.
 
 [METAR] je formát pro předávání informací o počasí v letectví. 
 Na  některých letištích se pravidelně zjištuje stav počasí a 
-některé webové služby ho přes API zobrazují.  
+některé webové služby ho přes API poskytují.  
 
 ## Úkol
 
