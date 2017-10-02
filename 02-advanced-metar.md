@@ -42,7 +42,8 @@ for element in tree.findall('.//data/METAR'):
 
 ## `Unable to import requests` 
 
-Kdo nemá requests, použije [urllib.request]
+Pokud chybí  modul requests, je možné použít  alternativu [urllib.request]. 
+Na fakultních strojích by měl nicméně být modul `requests`  přítomný.
 
 ```python
 from urllib.request import urlopen
