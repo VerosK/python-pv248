@@ -1,6 +1,6 @@
 # Knihovna `requests` a `etree`
 
-Python je vhodný nástroj pro práci s cizími službami.
+Python je vhodný nástroj pro práci se službami třetích stran.
 
 ## Motivace
 
