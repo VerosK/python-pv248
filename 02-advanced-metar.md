@@ -1,4 +1,4 @@
-# Knihovna `requests` a `etree`
+# Knihovna `requests` a `ElementTree`
 
 Python je vhodný nástroj pro práci se službami třetích stran.
 
@@ -40,9 +40,21 @@ for element in tree.findall('.//data/METAR'):
     temperature = element.find('./temp_c').text
 ```
 
+## `Unable to import requests` 
+
+Kdo nemá requests, použije [urllib.request]
+
+```python
+from urllib.request import urlopen
+
+url = urlopen('http://ifconfig.co/json')
+response_body = url.read() 
+```
+
 [METAR]: https://en.wikipedia.org/wiki/METAR
 [aviationweather.gov]: https://aviationweather.gov/adds/dataserver
 [LKTB]: https://aviationweather.gov/adds/dataserver_current/httpparam?dataSource=metars&requestType=retrieve&format=xml&stationString=LKTB&hoursBeforeNow=2
 [NOAA]: http://www.noaa.gov/
 [requests]: http://docs.python-requests.org/en/master/
 [ElementTree]: https://docs.python.org/3.5/library/xml.etree.elementtree.html
+[urllib.requst]: https://docs.python.org/3.5/library/urllib.request.html#module-urllib.request
