@@ -5,7 +5,7 @@ jak vypadají funkce a jak můžeme použít výchozí (default) parametry.
 
 ## Úkol
              
-Zkuste přepsat modulna domeček z minulého cvičení tak, 
+Zkuste přepsat modul na domeček z minulého cvičení tak, 
 aby se domeček kreslil ve funkci, přičemž seznam tahů želvy
 bude v seznamu (`list`) 
 
@@ -25,7 +25,7 @@ def draw_house(color='black', size=1., moves=HOUSE):
     """
     :param color:   barva domečku 
     :param size:    zvětšení domečku oproti základní velikosti
-    :param moves    
+    :param moves:   jednotlivé kroky želvy n-tice (úhel, posun)    
     """
     
     pass
