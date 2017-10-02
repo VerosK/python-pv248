@@ -18,7 +18,7 @@ HOUSE = [
 ]
 ```
 
-Hlavička funkce pak bude vypadat nějak takle
+Hlavička funkce pak bude vypadat nějak takhle
 
 ```python
 def draw_house(color='black', size=1., moves=HOUSE):
@@ -36,6 +36,7 @@ def draw_house(color='black', size=1., moves=HOUSE):
 Vyzkoušejte, si, jak fungují defaultní a pojmenované parametry.
 
 ```python
+draw_house()
 draw_house(color='red')
 draw_house(size=2)                    # large house
 draw_house(size=0.5, color='green')   # small one
