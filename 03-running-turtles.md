@@ -24,7 +24,7 @@ class Follower:
         """:param target:    želva, kterou pronásledujeme
         """
         
-        self.me = turtle.Turtle(color=color)        
+        self.me = turtle.Turtle()        
         # ... sem patří další inicializace objektu
 
     def step(self):
