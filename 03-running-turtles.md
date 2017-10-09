@@ -51,9 +51,29 @@ def run_demo():
 
 ```
 
+Pro dvě pronásledující želvy může vypadat třeba takhle:
+
+```python
+
+def run_demo():                                                               
+    speedy = Runner()                                                         
+    followers = [                                                             
+            Follower(target=speedy, color='#0080FF', speed=6),                
+            Follower(target=speedy, color='green', speed=2)                   
+    ]                                                                         
+    for i in range(10000):                                                    
+        speedy.step()                                                         
+        for f in followers:                                                   
+            f.step()                                                          
+    turtle.exitonclick()        
+```
+
 ## Potřebné moduly
 
-* [math]
+* [`math`][math]
+* [`turtle`][turtle]  ( [turtle methods][turtle.methods] )
 
 [speedy_turtle]: https://github.com/VerosK/python-pv248/blob/master/03-moving-turtle/speedy_turtle.py
 [math]: https://docs.python.org/3/library/math.html
+[turtle]: https://docs.python.org/3/library/turtle.html
+[turtle.methods]: https://docs.python.org/3.6/library/turtle.html#turtle-methods
