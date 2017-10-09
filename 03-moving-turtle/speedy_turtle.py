@@ -6,6 +6,7 @@ from random import randint
 X_LOW, X_HIGH = -300, 300
 Y_LOW, Y_HIGH = -300, 300
 
+
 class Runner:
     def __init__(self, color="red", shape="turtle", speed=10):
         self.x = randint(X_LOW, X_HIGH)
@@ -29,6 +30,7 @@ class Runner:
                 t.left(180)
                 t.forward(1.5*speed)
         self.x, self.y = t.xcor(), t.ycor()
+
 
 def run_demo():
     "Run demo"
