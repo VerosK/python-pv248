@@ -17,6 +17,8 @@ směrem k němu a posune se.
 
 ```python
 
+from speedy_turtle import Runner
+
 runner = Runner()
 
 class Follower:
@@ -24,11 +26,14 @@ class Follower:
         """:param target:    želva, kterou pronásledujeme
         """
         
-        self.me = turtle.Turtle(color=color)
-        # ... add some initialization here
+        self.me = turtle.Turtle(color=color)        
+        # ... sem patří další inicializace objektu
 
     def step(self):
-        "posune pronásledující objekt směrem k utíkajícímu objektu"
+        "posune mne směrem k utíkajícímu objektu"
+        
+        self.me.left(xxx)
+        self.me.forward(self.speed)
 
 ```
 
