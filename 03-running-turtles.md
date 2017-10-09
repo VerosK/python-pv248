@@ -19,8 +19,6 @@ směrem k němu a posune se.
 
 from speedy_turtle import Runner
 
-runner = Runner()
-
 class Follower:
     def __init__(self, target, color='blue', speed=6):
         """:param target:    želva, kterou pronásledujeme
