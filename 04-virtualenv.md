@@ -28,7 +28,7 @@ if __name__ == '__main__':
     app.run()
 ```
 
-## Session transcript
+## Sample session transcript
 
 ```bash
 
@@ -50,6 +50,17 @@ which pip
 # install flask
 
 pip install flask
+
+```
+
+Pokud chcete specifickou verzi Flasku, použijte
+
+```bash
+pip install 'flask==0.10'
+
+# nebo
+
+pip install 'flask>=0.11,<0.12'
 
 ```
 
