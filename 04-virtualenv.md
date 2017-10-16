@@ -10,6 +10,8 @@ Pokud modul flask nebude v poslední verzi, nainstalujte ji
 do [virtualenv][venv-guide].  Alternativně můžete použít 
 i modernější [pipenv][pipenv-guide]. 
 
+Na Windows zkuste [venv]
+
 ## Testovací aplikace
 
 ```python
@@ -54,3 +56,4 @@ pip install flask
 [flask]: http://flask.pocoo.org
 [venv-guide]: http://docs.python-guide.org/en/latest/dev/virtualenvs/#lower-level-virtualenv
 [pipenv-guide]: http://docs.python-guide.org/en/latest/dev/virtualenvs/
+[venv]: https://docs.python.org/3.5/library/venv.html
