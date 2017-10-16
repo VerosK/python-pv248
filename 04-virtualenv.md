@@ -26,6 +26,31 @@ if __name__ == '__main__':
     app.run()
 ```
 
+## Session transcript
+
+```bash
+
+# create virtualenv
+
+virtualenv -p python3 ~/my-flask
+
+# activate
+
+. ~/my-flask/bin/activate
+
+# PS1 prompt is changed
+
+# check pip and python
+
+which python3
+which pip 
+
+# install flask
+
+pip install flask
+
+```
+
 [flask]: http://flask.pocoo.org
 [venv-guide]: http://docs.python-guide.org/en/latest/dev/virtualenvs/#lower-level-virtualenv
 [pipenv-guide]: http://docs.python-guide.org/en/latest/dev/virtualenvs/
