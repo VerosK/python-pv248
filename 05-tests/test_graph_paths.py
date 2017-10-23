@@ -28,7 +28,7 @@ TEST_PATHS = [
 ]
 
 
-def graphFromString(description):
+def graph_from_string(description):
     "create graph from string"
     g = Graph()
     for part in description.split():
@@ -41,12 +41,19 @@ def graphFromString(description):
                 g.add_node(node_from)
             if node_to not in g.nodes():
                 g.add_node(node_to)
+            g.add_edge(node_from, node_to)
     return g
 
 
+def test_graph_from_string():
+    g = graph_from_string('A>B C>D')
+    assert g.node_count() == 4
+    assert g.has_edge('A', 'B') == True
+    assert g.has_edge('D', 'C') == False
+
 @pytest.mark.parametrize("description,node_from,node_to,expected", TEST_PATHS)
 def test_path(description, node_from, node_to, expected):
-    g = graphFromString(description)
+    g = graph_from_string(description)
     if expected is None:
         with pytest.raises(GraphException):
             g.has_path(node_from,node_to)
