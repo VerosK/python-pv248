@@ -2,21 +2,20 @@
 class GraphException(Exception):
     pass
 
+
 class Graph:
     def __init__(self):
         "Create empty oriented graph"
         self._nodes = {}
 
     def add_node(self, node_id):
-        """
-        Create new_node in the graph. Raises GraphException 
+        """Create new_node in the graph. Raises GraphException
         when duplicate node_id already exists"""
         if node_id in self._nodes:
             raise GraphException("Duplicate node_id used")
 
     def add_edge(self, node_from, node_to):
-        """
-        Add edge to the graph. 
+        """Add edge to the graph.
         Raises GraphException when duplicate edge exists
         """
         pass
@@ -40,8 +39,6 @@ class Graph:
         Retrun False if path doesn't exist.
         """
         pass
-
-
 
     def nodes(self):
         "Return list on nodes ids"
