@@ -9,24 +9,30 @@ GRAPH_CIRCLE = 'A>B B>C C>D D>E E>F F>A'
 GRAPH_CIRCLES = 'A>B B>A C>D D>C'
 GRAPH_TRAP = 'A>B B>A B>C B>F'
 
+
 TEST_PATHS = [
     # graph,    from,   to,  expected
     #                        (true, false, None=exception)
+    [GRAPH_SINGLE, 'A', 'A', False],
     [GRAPH_SINGLE, 'A', 'B', True],
     [GRAPH_SINGLE, 'B', 'A', False],
     [GRAPH_SINGLE, 'B', 'A', False],
     [GRAPH_SINGLE, 'A', 'C', None],
 
+    [GRAPH_LINE, 'A', 'A', False],
     [GRAPH_LINE, 'A', 'B', True],
     [GRAPH_LINE, 'A', 'E', True],
     [GRAPH_LINE, 'B', 'A', False],
+
+    [GRAPH_CIRCLE, 'A', 'A', True],
+    [GRAPH_CIRCLE, 'A', 'E', True],
+    [GRAPH_CIRCLE, 'B', 'G', None],
 
     [GRAPH_CIRCLES, 'A', 'B', True],
     [GRAPH_CIRCLES, 'B', 'A', True],
     [GRAPH_CIRCLES, 'A', 'C', False],
     [GRAPH_CIRCLES, 'A', 'E', None],
 ]
-
 
 def graph_from_string(description):
     "create graph from string"
