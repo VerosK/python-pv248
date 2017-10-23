@@ -28,7 +28,7 @@ if __name__ == '__main__':
     app.run()
 ```
 
-## Sample session transcript
+## Sample session transcript (Unix)
 
 ```bash
 
@@ -52,6 +52,30 @@ which pip
 pip install flask
 
 ```
+
+## Sample session transcript (Windows)
+
+```commandline
+
+# create my-flask virtualenv
+
+python -m venv my-flask
+
+# activate it
+
+my-flask\activate.bat
+
+# prompt should change
+
+pip install flask
+
+# check version
+
+python3 -c 'import sys; print(sys.path)'
+
+```
+
+## Notes
 
 Pokud chcete specifickou verzi Flasku, použijte
 
