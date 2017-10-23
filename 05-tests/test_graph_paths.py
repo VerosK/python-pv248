@@ -4,7 +4,6 @@ from graph import Graph, GraphException
 
 GRAPH_SINGLE = 'A>B'
 GRAPH_LINE = 'A>B B>C C>D D>E'
-GRAPH_NON_CONTINGOUS = 'A>B C>D D>C'
 GRAPH_CIRCLE = 'A>B B>C C>D D>E E>F F>A'
 GRAPH_CIRCLES = 'A>B B>A C>D D>C'
 GRAPH_TRAP = 'A>B B>A B>C B>F'
