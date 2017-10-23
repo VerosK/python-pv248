@@ -2,18 +2,30 @@
 import pytest
 from graph import Graph, GraphException
 
-@pytest.fixture()
-def graph():
-    return Graph()
 
-def test_empty_graph(graph):
-    assert graph.node_count() == 0
+@pytest.fixture()
+def empty_graph():
+    g = Graph()
+    return g
+
+@pytest.fixture(params=[0,10,20])
+def graph(request):
+    g = Graph()
+    for i in range(request.param):
+        g.add_node('node-{}'.format(i))
+    return g
+
+def test_empty_graph(empty_graph):
+    print(empty_graph)
+    assert empty_graph.node_count() == 0
 
 def test_node_insert(graph):
+    old_node_count = graph.node_count()
     graph.add_node('a')
     graph.add_node('b')
     graph.add_node(42)
-    assert graph.node_count() == 3
+    new_node_count = graph.node_count()
+    assert new_node_count - old_node_count == 3
 
 def test_node_duplicate_insert(graph):
     graph.add_node('single')
