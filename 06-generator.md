@@ -20,7 +20,7 @@ Zkuste vypsat první 50 druhých mocnin generovaných generátorem.
 
 ```pythonstub
 
-# generátor prvočísel
+# generátor čísel
 def count(start=1, step=1):
     yield 2
     yield 3
@@ -50,7 +50,7 @@ Jako generátory se mohou chovat i řetězce a další objekty. Zkuste
 to na řetězci.
 
 Kromě generátoru `range()` je v Pythonu spousta užitečných generátorů
-v modulu [`itertools`][itertools].  Je možné několik generátorů sloužit.
+v modulu [`itertools`][itertools].  Je možné několik generátorů složit.
 
 Zkuste v něm najít generátor, který z řetězců `"ABCDEFGH"` a `"12345678"`
 vygeneruje kódy všech políček na šachovnici.
