@@ -33,7 +33,7 @@ def square(src):
 # vypíše prvních 50 druhých mocnin    
 squares = square(count())
 for i in range(100):
-    s = next(square)
+    s = next(squares)
     print(s)
     
 # alternativně (s použití enumerate())
