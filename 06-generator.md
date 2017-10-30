@@ -60,6 +60,8 @@ vygeneruje kódy všech políček na šachovnici.
 I soubor se chová jako generátor. Otevřete textový soubor a vypište
 z něho všechny řádky, které nejsou prázdné a/nebo nezačínají mřízkou.
 
+Jako bonus pak můžete zkusit použít použít coroutines 
+podle [odkazovaného článku][yield-explained]. 
 
 [yield-explained]: https://jeffknupp.com/blog/2013/04/07/improve-your-python-yield-and-generators-explained/
 [itertools.count]: https://docs.python.org/2/library/itertools.html#itertools.count
