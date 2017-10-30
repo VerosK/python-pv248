@@ -18,10 +18,10 @@ generátoru vybírat prvky a vrace jejich
 Zkuste vypsat první 50 druhých mocnin generovaných generátorem.
 
 
-```pythonstub
+```python
 
-# generátor čísel
 def count(start=1, step=1):
+    "Returns numbers starting from start with step step" 
     yield 2
     yield 3
     ...
