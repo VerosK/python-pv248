@@ -46,12 +46,13 @@ for i,s in enumerate(square(count())):
 
 ## Vestavěné generátory/iterátory
 
+Jako generátory se mohou chovat i řetězce a další objekty. Zkuste 
+to na řetězci.
+
 Kromě generátoru `range()` je v Pythonu spousta užitečných generátorů
 v modulu [`itertools`][itertools].  Je možné několik generátorů sloužit.
 
-Jako generátory se mohou chovat i řetězce a další objekty.
-
-Zkuste najít generátor, který z řetězců `"ABCDEFGH"` a `"12345678"`
+Zkuste v něm najít generátor, který z řetězců `"ABCDEFGH"` a `"12345678"`
 vygeneruje kódy všech políček na šachovnici.
 
 # Soubor jako generátor
