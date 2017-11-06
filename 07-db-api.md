@@ -1,8 +1,11 @@
 # DB-API
 
 Vytvořit skript, který bude stahovat letecká data 
-o počíasí a ukládat teplotu do relační databáze pro další
+o počasí a ukládat teplotu do relační databáze pro další
 zpracování.
+
+Připravte druhý skript, který z té databáze přečte poslední teplotu
+a vypíše ji.  
 
 Jako relační databázi použijte [sqlite][sqlite3]. 
 
