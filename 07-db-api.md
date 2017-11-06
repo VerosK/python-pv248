@@ -1,6 +1,6 @@
 # DB-API
 
-Vytvořit skript, který bude stahovat letecká data 
+Vytvořte skript, který bude stahovat letecká data 
 o počasí a ukládat teplotu do relační databáze pro další
 zpracování.
 
@@ -72,7 +72,7 @@ Pro rozparsování XML použijte např. modul [ElementTree].
 
 V XML dodávaném službou aviationweather.gov  je několik měření.
 
-```python
+```pythonstub
 import xml.etree.ElementTree as etree
 
 tree = etree.fromstring(xml_string)
