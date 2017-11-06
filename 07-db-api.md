@@ -80,6 +80,20 @@ for element in tree.findall('.//data/METAR'):
     temperature = element.find('./temp_c').text
 ```
 
+## Zpracování času
+
+Nástroje pro práci s časem jsou v module [datetime]. 
+
+```python
+from datetime import datetime
+
+# zparsovat string na datetime
+measured = datetime.strptime('2017-11-06T11:00:00Z', '%Y-%m-%dT%H:%M:%SZ')
+print(measured)
+# vypíše UNIX timestamp
+print(measured.timestamp()) 
+```
+
 ## `Unable to import requests` 
 
 Pokud chybí  modul requests, je možné použít  alternativu [urllib.request]. 
@@ -102,3 +116,4 @@ response_body = url.read()
 [ElementTree]: https://docs.python.org/3.5/library/xml.etree.elementtree.html
 [urllib.request]: https://docs.python.org/3.5/library/urllib.request.html#module-urllib.request
 [sqlite3]: https://docs.python.org/3.5/library/sqlite3.html
+[datetime]: https://docs.python.org/3.5/library/datetime.html
