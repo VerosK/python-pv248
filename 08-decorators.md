@@ -43,7 +43,7 @@ inspector = CallInspector()
 
 @inspector.inspect
 def fib(n):
-    pass  # here was the original function
+    pass  # the original function should be here
     
 # invoke function and show call statistics
 fib(256)
@@ -57,6 +57,14 @@ Pomocí modulu [`timeit`][timeit] změřte, jak dlouho vykonávání `fib(256)`
 trvá. Zkuste použít dekorátor [`@cache`][cache], a změřte, jestli se 
 použitím cache výpočet zrychlí.
 
+## Inspection
+
+V REPL se podívejte, co si o funkci `fib()` myslí nápověda před dekorováním 
+a po dekorování.
+
+```pythonstub
+>>> help(fib)
+```
 
 [Counter]: https://docs.python.org/3.5/library/collections.html#collections.Counter
 [collections]: https://docs.python.org/3.5/library/collections.html
