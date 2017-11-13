@@ -2,7 +2,7 @@
 
 ## Vlastní dekorátor 
 
-Napiště dekorátor, který zachytí volání funkce a uchová parametry 
+Napište dekorátor, který zachytí volání funkce a uchová parametry 
 volání funkce.
 
 Pro počítání můžete s výhodou použít [`Counter`][Counter] z 
@@ -10,7 +10,7 @@ modulu [`collections`][collections]
 
 ----- 
 
-Mějme naivní rekurzivní funkci na výpočet číslav z Fibonacciho posloupnosti
+Mějme naivní rekurzivní funkci na výpočet čísla z Fibonacciho posloupnosti
 
 ```python
 def fib(n):
