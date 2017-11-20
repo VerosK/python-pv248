@@ -3,7 +3,7 @@
 ## Matice
 
 V modulu [`numpy`][numpy] jsou nástroje pro práci s maticemi, matice 
-umí datový typ array.
+je reprezentována datovým typ array.
 
 
 ```python
