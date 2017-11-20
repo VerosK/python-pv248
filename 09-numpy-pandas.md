@@ -13,7 +13,9 @@ m1 = np.array([[1,2,3],[3,4,5],[5,6,7]], dtype='float')
 
 print(m1)
 print(m1.shape)
-m1.shape[0,0]
+m1[0,0]  # Co dělá tohle?
+m1[:,0]  # a tohle?
+m1[1,:]  # a tohle?
 ```
 
 ## Nové matice
@@ -21,7 +23,6 @@ m1.shape[0,0]
 Novou matici je kromě přímé udělat pomocí `np.zeros()` a `np.ones()`.
 
 Matici obsahující náhodná čísla s normálním rozložením pak pomocí: `np.random.uniform(-1,1, size=(4,4))`
-
 
 
 ## Lineární rovnice
