@@ -25,7 +25,7 @@ m1[1,:]  # a tohle?
 m1 % 2              
                     
 selector = (m1 % 2 == 0)
-m1[selectpr]        # co udělá tohle?        
+m1[selector]        # co udělá tohle?        
 ```
 
 Matici je možné změnit velikost `m.reshape()`.
