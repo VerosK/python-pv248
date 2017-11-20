@@ -10,6 +10,7 @@
 *  [generators][06-generators]
 *  [DB api][07-db-api]
 *  [dekorátory][08-decorators]
+*  [numpy][09-numpy-pandas]
 
 [01-basic-intro.md]: https://github.com/VerosK/python-pv248/blob/master/01-basic-intro.md
 [02-functions]: https://github.com/VerosK/python-pv248/blob/master/02-basic-functions.md
@@ -20,3 +21,4 @@
 [06-generators]: https://github.com/VerosK/python-pv248/blob/master/06-generator.md
 [07-db-api]: https://github.com/VerosK/python-pv248/blob/master/07-db-api.md
 [08-decorators]: https://github.com/VerosK/python-pv248/blob/master/08-decorators.md
+[08-decorators]: https://github.com/VerosK/python-pv248/blob/master/09-numpy-pandas.md
