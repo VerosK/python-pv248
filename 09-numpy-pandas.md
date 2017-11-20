@@ -47,8 +47,8 @@ s lineární algebrou.
 Zkuste pomocí [linalg.solve][linalg] vyřešit systém rovnic.
 ```
     3x +  2y - z  =  1 
-    1x -  2y + 4z = -2 
-    -x + y/2 + z  =  0 
+    2x -  2y + 4z = -2 
+    -x + y/2 - z  =  0 
 ```
 
 
