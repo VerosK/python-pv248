@@ -51,7 +51,7 @@ Zkuste pomocí [linalg.solve][linalg] vyřešit systém rovnic.
     -x + y/2 - z  =  0 
 ```
 
-Řešením by mělo být $+1, -2, -2$ 
+Řešením by mělo být `+1, -2, -2` 
 
 
 [numpy]: https://docs.scipy.org/doc/numpy-1.13.0/reference/index.html
