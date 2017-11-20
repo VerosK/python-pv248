@@ -9,7 +9,7 @@ je reprezentována datovým typ array.
 ```python
 import numpy as np
 
-m1 = np.array([[1,2,3],[3,4,5],[5,6,7], dtype='float')
+m1 = np.array([[1,2,3],[3,4,5],[5,6,7]], dtype='float')
 
 print(m1)
 print(m1.shape)
