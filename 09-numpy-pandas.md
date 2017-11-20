@@ -1,9 +1,9 @@
 # Numpy
 
-## Matice
+## Pole
 
-V modulu [`numpy`][numpy] jsou nástroje pro práci s maticemi, matice 
-je reprezentována datovým typ array.
+V modulu [`numpy`][numpy] jsou nástroje pro práci s maticemi/poly, které
+jsou reprezentovány datovým typ array.
 
 
 ```python
@@ -18,11 +18,25 @@ m1[:,0]  # a tohle?
 m1[1,:]  # a tohle?
 ```
 
-## Nové matice
+## Manipulace s maticemi
 
-Novou matici je kromě přímé udělat pomocí `np.zeros()` a `np.ones()`.
+```python
+10 * m1             # skalární operace
+m1 % 2              
+                    
+selector = (m1 % 2 == 0)
+m1[selectpr]        # co udělá tohle?        
+```
 
-Matici obsahující náhodná čísla s normálním rozložením pak pomocí: `np.random.uniform(-1,1, size=(4,4))`
+Matici je možné změnit velikost `m.reshape()`.
+
+## Nové pole
+
+Nové pole je kromě přímého zadání možné udělat pomocí 
+`np.zeros()` a `np.ones()`.
+
+Pole obsahující náhodná čísla s normálním rozložením pak pomocí: 
+`np.random.uniform(-1,1, size=(4,4))`
 
 
 ## Lineární rovnice
