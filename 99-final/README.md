@@ -29,7 +29,7 @@ přesto vrátit `200 OK` a v těle odpovědi vrátit chybový stav.
 
 * Na metodu `HEAD` není chování definováno.
 
-* Na jiné HTTP metody má API vrátit `501 Not implemented`
+* Na jiné HTTP metody má API vrátit `405 Method Not Allowed`
 
 ## Vstup API
 
@@ -109,12 +109,12 @@ Pro řešení můžete použít libovovolné moduly (třeba pro BFS či
 Dijstrův algoritmus).  Pokud potřebujete nějaké speciální
 moduly, nezpomeňte je přidat do `requirements.txt`.
 
-Aplikaci budeme testovat ve virtuálním prostředí s Pythonem 3, před instalací
-provedu 
+Aplikaci budeme testovat ve virtuálním prostředí s Pythonem 3, před 
+spuštěním se provede 
 
 ```bash
 pip install -r requirements.txt
 ```   
 
-Pro testy aplikace můžete použít přiložené testy.
-Testy čekají, že aplikace poslouchá na portu 5000. 
+Pro testy aplikace můžete použít přiložené testy - ty čekají, že 
+aplikace poslouchá na portu 5000. 
