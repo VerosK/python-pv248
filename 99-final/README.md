@@ -90,12 +90,15 @@ výstup. HTTP odpověď bude přesto 200 OK.
  "error": "Invalid input" 
 }
 ```
+
+<!---
+
 ## Ukázkové řešení
 
 Ukázkové řešené běží třeba na https://pv248.toaster.cz (HTTPS na 443), 
 Vaše aplikace by ale měla poslouchat na http://localhost:5000/
 
-<!---
+-->
 
 ## Odevzdání
 
