@@ -79,8 +79,8 @@ HTTP odpověď bude přesto 200 OK.
 }
 ```
 
-Pokud je zadání nesmyslné (např. chceme postavit chodbu mezi), 
-vrátí aplikace v klíčích `solution` a `length` hodnotu `None` a 
+Pokud je zadání nesmyslné (např. chceme postavit chodbu mezi 
+neexistujícími místnostmi), vrátí aplikace v klíčích `solution` a `length` hodnotu `None` a 
 v klíči `error` pošle zprávu *'Invalid input'*, případně detailnější 
 výstup. HTTP odpověď bude přesto 200 OK.
 
@@ -90,12 +90,12 @@ výstup. HTTP odpověď bude přesto 200 OK.
  "error": "Invalid input" 
 }
 ```
-<!---
 ## Ukázkové řešení
 
 Ukázkové řešené běží třeba na https://pv248.toaster.cz (HTTPS na 443), 
 Vaše aplikace by ale měla poslouchat na http://localhost:5000/
 
+<!---
 
 ## Odevzdání
 
@@ -113,6 +113,5 @@ provedu
 pip install -r requirements.txt
 ```   
 
-Aplikace by měla projít dodanými testy. 
-
--->
+Pro testy aplikace můžete použít přiložené testy.
+Testy čekají, že aplikace poslouchá na portu 5000. 
