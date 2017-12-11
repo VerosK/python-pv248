@@ -69,8 +69,8 @@ pin 2 nastavíme na LOW, dioda se rozsvítí.
 ```python
 import machine
 led = machine.Pin(2, machine.Pin.OUT)
-led.low()
-led.high()
+led.on()
+led.off()
 
 # zablikat
 for i in range(20):
@@ -93,7 +93,7 @@ Deska umí posílat HTTP požadavky pomocí modulu `urequests`.
 
 ```python
 import urequests
-urequests.get('https:// .///')
+urequests.get('http://www.python.cz/')
 ```
 
 Otestovat `urequests` můžete např. pomocí služby [requestbin]
@@ -112,9 +112,8 @@ ampy -p /dev/ttyUSB0 put filename.py
 ```
 
 Zkuste do desky nahrát program, který počká na stisknutí tlačítka
-a někam pošle HTTP request.
+a pak někam pošle HTTP request.
 
-##
 
 [ampy]: https://github.com/adafruit/ampy
 [utime]: https://docs.micropython.org/en/latest/pyboard/library/utime.html
