@@ -11,6 +11,7 @@
 *  [DB api][07-db-api]
 *  [dekorátory][08-decorators]
 *  [numpy][09-numpy-pandas]
+*  [Micropython][16-micropython]
 
 [01-basic-intro.md]: https://github.com/VerosK/python-pv248/blob/master/01-basic-intro.md
 [02-functions]: https://github.com/VerosK/python-pv248/blob/master/02-basic-functions.md
