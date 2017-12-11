@@ -23,3 +23,4 @@
 [07-db-api]: https://github.com/VerosK/python-pv248/blob/master/07-db-api.md
 [08-decorators]: https://github.com/VerosK/python-pv248/blob/master/08-decorators.md
 [09-numpy-pandas]: https://github.com/VerosK/python-pv248/blob/master/09-numpy-pandas.md
+[16-micropython]: https://github.com/VerosK/python-pv248/blob/master/16-micropython.md
