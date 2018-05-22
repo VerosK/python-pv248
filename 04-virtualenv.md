@@ -63,7 +63,7 @@ python -m venv my-flask
 
 # activate it
 
-my-flask\activate.bat
+my-flask\Scripts\activate.bat
 
 # prompt should change
 
